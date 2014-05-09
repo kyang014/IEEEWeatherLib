@@ -1,0 +1,15 @@
+Example code/testbench in WeatherListenerTestGUI project
+
+Usage:
+
+1. using IEEEWeather;
+2. Instantiate a WeatherListener and register event handler
+3. WeatherListener.Start();
+4. Listen for events
+
+Event passes a WeatherUpdate object that contains various WeatherValues
+WeatherValues implicitly convert to and from floats.
+
+Numbers in WeatherValues are in a default unit.
+Some WeatherValue dervied classes (TemperatureValue, etc) have conversions to other units.
+	ex TemperatureValue.ToF();  // default unit is in C
